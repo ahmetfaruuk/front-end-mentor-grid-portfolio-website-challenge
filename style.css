@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: hsl(228, 20%, 90%);
+}
+.container {
+    display: grid;
+    
+    grid-template-areas: 
+    "card1 card1 card2 card5"
+    "card3 card4 card4 card5";
+    max-width: 1600px;
+    margin: 100px auto;
+    border-radius: 10px;
+    
+}
+
+.card {
+    margin: 20px;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 10px;
+    
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-header h3 {
+    font-size: 16px;
+}
+
+.card-header p {
+    opacity: 0.5;
+}
+
+.person-image {
+    border: 2px solid  hsl(228, 61%, 66%);;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.card-lead {
+    font-size: 22px;
+    margin-bottom: 15px;
+    line-height: 1.4em;
+}
+
+.card-desc {
+    font-size: 14px;
+    opacity: 0.6;
+    line-height: 1.4em;
+}
+
+.attribution { 
+    font-size: 14px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(0, 2%, 22%)
+}
+
+.bg-purple {
+    background-color: rgba(96, 25, 163, 0.815);
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-position:top 0px right 150px;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.bg-grey-blue {
+    background-color: rgb(68, 82, 121);
+    color: white;
+}
+
+.bg-navy-blue {
+    background-color: rgb(29, 34, 53);
+    color: white;
+}
+
+.card1 {
+    grid-area: card1;
+}
+
+.card2 {
+    grid-area: card2;
+}
+
+.card3 {
+    grid-area: card3;
+}
+
+.card4 {
+    grid-area: card4;
+}
+
+.card5 {
+    grid-area: card5;
+}
+
+/* Media Quaries */
+@media (max-width:768px){
+    .container {
+        grid-template-areas: 
+        "card1"  
+        "card2" 
+        "card3 "
+        "card4"
+        "card5";
+    }
+}
